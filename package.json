@@ -6,15 +6,15 @@
   "bin": {
     "anydoor": "bin/anydoor"
   },
-  // "scripts": {
-  //   "test": "echo \"Error: no test specified\" && exit 1",
-  //   "lint": "eslint .",
-  //   "fix": "eslint --fix ."
-  // },
-  // "pre-commit": [
-  //   "fix",
-  //   "lint"
-  // ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zwz19920309/anydoor.git"
