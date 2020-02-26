@@ -12,9 +12,9 @@ class Server {
   start() {
     http.createServer((req, res) => {
       const url = req.url;
-      const filePath = path.join(conf.root, url);
-      route(req, res, filePath, conf);
-    }).listen(conf.port);
+      const filePath = path.join(this.conf.root, url);
+      route(req, res, filePath, this.conf);
+    }).listen(this.conf.port);
     // const server = http.createServer((req, res) => {
     //   const url = req.url;
     //   const filePath = path.join(this.conf.root, url);
