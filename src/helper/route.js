@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const Handlebars = require('Handlebars');
+const Handlebars = require('handlebars');
 const promisify = require('util').promisify;
 const stat = promisify(fs.stat);
 const readdir = promisify(fs.readdir);
