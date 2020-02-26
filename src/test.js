@@ -1,4 +1,4 @@
-var http = require('http')
+var http = require('http');
 http.createServer(function (req, res) {//回调函数
   console.info(req.httpVersion);
   console.info(req.headers);

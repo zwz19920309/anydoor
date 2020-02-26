@@ -5,9 +5,12 @@ const conf = require('./config/defaultConfig');
 const route = require('./helper/route');
 
 const server = http.createServer((req, res) => {
-  const url = req.url;
-  const filePath = path.join(conf.root, url);
-  route(req, res, filePath, conf);
+  // const url = req.url;
+  // const filePath = path.join(conf.root, url);
+  // route(req, res, filePath, conf);
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write('holloe  world');
+  res.end('fdsa');
 });
 
 server.listen(conf.port, conf.hostname, () => {
