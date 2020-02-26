@@ -18,7 +18,7 @@ class Server {
     });
 
     server.listen(this.conf.port, this.conf.hostname, () => {
-      const addr = `http://${conf.hostname}:${conf.port}`;
+      const addr = `http://${conf.hostname}:${this.conf.port}`;
       console.info(`u Server started at ${chalk.green(addr)}`);
     });
   }
