@@ -1,21 +1,22 @@
 const http = require('http');
-const chalk = require('chalk');
+// const chalk = require('chalk');
 // const path = require('path');
 const conf = require('./config/defaultConfig');
 // const route = require('./helper/route');
-const server = http.createServer((req, res) => {
+// const server =
+http.createServer((req, res) => {
   // const url = req.url;
   // const filePath = path.join(conf.root, url);
   // route(req, res, filePath, conf);
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('holloe  world');
   res.end('fdsa');
-});
+}).listen(conf.port);
 
-server.listen(conf.port, conf.hostname, () => {
-  const addr = `http://${conf.hostname}:${conf.port}`;
-  console.info(`u Server started at ${chalk.green(addr)}`);
-});
+// server.listen(conf.port, conf.hostname, () => {
+//   const addr = `http://${conf.hostname}:${conf.port}`;
+//   console.info(`u Server started at ${chalk.green(addr)}`);
+// });
 // class Server {
 
 //   constructor(config) {
